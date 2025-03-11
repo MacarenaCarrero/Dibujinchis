@@ -11,4 +11,29 @@ Colors:
 }
 
 .leaf {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  background-color:#f3ac3c ;
+  border-radius: 70px ;
+left: 200px;
+top: 30px;
+}
+.leaf::after,
+.leaf:before{
+  position: absolute;
+  content: "";
+  width: 120px;
+  height: 120px;
+  background-color:#f3ac3c ;
+  border-radius: 70px 0 70px 70px;
+  top: 110px;
+  left: -120px;
+}
+.leaf::before{
+  width: 120px;
+  height: 120px;
+  background-color:#998235 ;
+  top: 60px;
+  left: -60px;
 }
